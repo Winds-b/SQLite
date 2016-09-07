@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+
+
+    <TextView
+
+        android:text="单词"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:textSize="30dp"
+        android:id="@+id/textview1" />
+
+    <EditText
+        android:id="@+id/txtWord"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/textview1"
+        android:ems="13"
+        android:layout_marginLeft="20dp"
+        android:layout_alignBottom="@+id/textview1" />
+
+
+
+
+    <TextView android:text="含义"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:textSize="30dp"
+        android:id="@+id/textview2"
+        android:layout_below="@+id/textview1"
+        android:inputType="text" />
+
+    <EditText
+        android:ems="13"
+        android:id="@+id/txtMeaning"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtWord"
+        android:layout_below="@+id/txtWord"
+        android:layout_alignTop="@+id/textview2"
+        android:layout_alignBottom="@+id/textview2" />
+
+
+
+
+    <TextView android:text="示例"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:textSize="30dp"
+        android:id="@+id/textview3"
+        android:layout_below="@+id/textview2" />
+
+    <EditText
+        android:ems="13"
+        android:id="@+id/txtSample"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtMeaning"
+        android:layout_below="@+id/txtMeaning"
+        android:layout_alignBottom="@+id/textview3"
+        android:layout_alignTop="@+id/textview3" />
+
+</RelativeLayout>
